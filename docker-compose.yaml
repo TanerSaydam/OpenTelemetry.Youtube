@@ -1,0 +1,27 @@
+services:
+ jeager:
+   image: jaegertracing/all-in-one:latest
+   ports:
+   - 16686:16686 #frontend
+   - 4317:4317 #gRPc
+   - 4318:4318 #http
+   container_name: jeager
+
+ prometheus:
+   container_name: prometheus
+   image: prom/prometheus:v2.37.9
+   volumes: ['./prometheus.yml:/etc/prometheus/prometheus.yml']
+   ports:
+   - 9090:9090
+
+ metric.api:
+  container_name: metric.api
+  build:
+    context: .
+    dockerfile: Observability.Youtube.Metric.WebAPI/Dockerfile
+  ports:
+  - 8080:8080
+  
+  
+  
+  # docker compose up -d bu kod ile bu dosya okunur

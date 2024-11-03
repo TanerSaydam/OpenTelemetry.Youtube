@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Observability.Youtube.ConsoleApp", "Observability.Youtube.ConsoleApp\Observability.Youtube.ConsoleApp.csproj", "{B9DB442B-E5EF-4376-B6D5-EF8F1718CED5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E720E2C0-129E-4D60-A1D3-90DDDB658CBD}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yaml = docker-compose.yaml
+		prometheus.yml = prometheus.yml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Observability.Youtube.Tracing.WebAPI", "Observability.Youtube.Tracing.WebAPI\Observability.Youtube.Tracing.WebAPI.csproj", "{F5BC54D2-D25D-491D-9E6E-5995AA79EEE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observability.Youtube.Metric.WebAPI", "Observability.Youtube.Metric.WebAPI\Observability.Youtube.Metric.WebAPI.csproj", "{2C3CB04B-F837-47DB-BC17-CCC4861E0DEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9DB442B-E5EF-4376-B6D5-EF8F1718CED5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9DB442B-E5EF-4376-B6D5-EF8F1718CED5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9DB442B-E5EF-4376-B6D5-EF8F1718CED5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9DB442B-E5EF-4376-B6D5-EF8F1718CED5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5BC54D2-D25D-491D-9E6E-5995AA79EEE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5BC54D2-D25D-491D-9E6E-5995AA79EEE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5BC54D2-D25D-491D-9E6E-5995AA79EEE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5BC54D2-D25D-491D-9E6E-5995AA79EEE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C3CB04B-F837-47DB-BC17-CCC4861E0DEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C3CB04B-F837-47DB-BC17-CCC4861E0DEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C3CB04B-F837-47DB-BC17-CCC4861E0DEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C3CB04B-F837-47DB-BC17-CCC4861E0DEC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE8D1EA6-8ADB-4B63-97C0-E79B3FD431A7}
+	EndGlobalSection
+EndGlobal
